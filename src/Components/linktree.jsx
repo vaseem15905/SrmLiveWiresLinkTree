@@ -3,18 +3,18 @@ import tech from '../assets/tech.png'
 import creatives from "../assets/creatives.png"
 import Livewires from "../assets/Livewires.png"
 import pr from "../assets/pr.png"
+import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa'; // Assuming you're using react-icons
 
 function LinkTree() {
   return (
     <div className="w-full min-h-screen bg-gradient-to-r from-black via-gray-900 to-black flex flex-col items-center justify-center px-4 pb-16">
-      <div className="text-center ">
+      <div className="text-center">
         <img src={Livewires} alt="Livewires" className="w-72 animate-fadeIn h-auto mb-4 md:w-96 md:mb-4" />
-        
       </div>
-      <h1 className="animate-pulse text-white text-xl md:text-3xl xl:text-4xl mb-9  font-bold">
-          LET'S INTEND. INVENT. INSPIRE!
-        </h1>
-      <h2 className='animate-slideInLeft text-white text-2xl md:text-3xl xl:text-3xl  mb-20 font-mono text-center px-4'>
+      <h1 className="animate-pulse text-white text-xl md:text-3xl xl:text-4xl mb-9 font-bold">
+        LET'S INTEND. INVENT. INSPIRE!
+      </h1>
+      <h2 className='animate-slideInLeft text-white text-2xl md:text-3xl xl:text-3xl mb-20 font-mono text-center px-4'>
         Where will your talents shine? Pick a field and join the adventure!
       </h2>
 
@@ -44,6 +44,22 @@ function LinkTree() {
           </div>
         </a>
       </div>
+
+      {/* Footer */}
+      <footer className="w-full bg-slate-900 text-white flex flex-col items-center py-4 mt-16">
+        <p className="text-lg mb-4">Follow us on</p>
+        <div className="flex gap-4">
+          <a href="https://www.instagram.com/live.wires_?igsh=NGx0cHllZnJ3Zmln" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+            <FaInstagram size={24} />
+          </a>
+          <a href="https://www.linkedin.com/company/livewires-srm" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+            <FaLinkedin size={24} />
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61550269514833&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+            <FaFacebook size={24} />
+          </a>
+        </div>
+      </footer>
     </div>
   )
 }
