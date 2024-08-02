@@ -94,6 +94,7 @@ function LinkTree() {
             <button className="animate-floatUp bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-white font-bold text-base md:text-lg lg:text-xl py-2 md:py-3 lg:py-4 px-4 md:px-6 lg:px-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               Tech Team
             </button>
+            <p className='text-lg mt-4 text-yellow-300 animate-pulse shadow-sm '>Final Countdown! Ends August 3 at Noon!</p>
           </div>
         </a>
         <div className="relative animate-fadeIn bg-white/20 backdrop-blur-md border border-white/20 flex flex-col items-center mb-12 p-5 md:mb-0 rounded-lg opacity-90">
