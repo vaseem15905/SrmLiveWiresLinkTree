@@ -144,10 +144,10 @@
 
 
 import React, { useState, useEffect } from 'react';
-import tech from '../assets/tech.png';
-import creatives from "../assets/creatives.png";
+// import tech from '../assets/tech.png';
+// import creatives from "../assets/creatives.png";
 import Livewires from "../assets/Livewires.png";
-import pr from "../assets/pr.png";
+// import pr from "../assets/pr.png";
 import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 function LinkTree() {
