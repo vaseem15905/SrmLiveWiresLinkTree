@@ -151,33 +151,6 @@ import Livewires from "../assets/Livewires.png";
 import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 function LinkTree() {
-  const calculateTimeLeft = () => {
-    const now = new Date();
-    const deadline = new Date();
-    deadline.setHours(12, 0, 0, 0); // Set deadline to today at 12 PM
-
-    if (now > deadline) {
-      return { hours: 0, minutes: 0, seconds: 0 }; // Countdown has ended
-    }
-
-    const difference = deadline - now;
-    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((difference / (1000 * 60)) % 60);
-    const seconds = Math.floor((difference / 1000) % 60);
-
-    return { hours, minutes, seconds };
-  };
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <div className="w-full min-h-screen bg-gradient-to-r from-black via-gray-900 to-black flex flex-col items-center justify-center px-4 pb-16">
       <div className="text-center">
