@@ -143,7 +143,7 @@
 // export default LinkTree;
 
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 // import tech from '../assets/tech.png';
 // import creatives from "../assets/creatives.png";
 import Livewires from "../assets/Livewires.png";
